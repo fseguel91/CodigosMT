@@ -1,0 +1,8 @@
+X_train= ['s19Durmiendo', 's19Triste', 's19Guino', 's19LuzDerecha', 's19LuzCentral', 's19Normal']
+
+X_test= ['s19Sorpresa', 's19Feliz', 's19LuzIzquierda']
+
+y_train= ['s19', 's19', 's19', 's19', 's19', 's19']
+
+y_test= ['s19', 's19', 's19']
+

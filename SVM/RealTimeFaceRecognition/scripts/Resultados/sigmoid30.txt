@@ -1,0 +1,49 @@
+ 
+========================================================
+    Reconocimiento y deteccion de rostros usando OpenCV 
+========================================================
+
+Resumen: En tiempo real  seguimiento facial y reconocimiento usando harrcascade y SVM
+
+Ejecutar: * Para ejecutarlo sin opciones    main.py python
+        O corriendo con opciones (Por defecto, scale_multiplier = 4):
+        main.py python [scale_multiplier = <screensize dividido por scale_multiplier>]
+        Decir que desea ejecutar con 1/2 del tamamo completo sreen, especifique que scale_multiplier = 4:
+        python main.py 4
+Uso:
+        pulse 'q' o 'ESC' para salir de la aplicacion
+
+Cargando Base de datos: 
+0      9  imagenes se cargan a partir de: ../face_profiles/s04EmilioTramon
+1      9  imagenes se cargan a partir de: ../face_profiles/s03CarlosLeal
+2      9  imagenes se cargan a partir de: ../face_profiles/s13YurisamIsla
+3      9  imagenes se cargan a partir de: ../face_profiles/s08FabianQuiroz
+4      9  imagenes se cargan a partir de: ../face_profiles/s12PabloRodriguez
+5      9  imagenes se cargan a partir de: ../face_profiles/s10AlejandroCarrasco
+6      9  imagenes se cargan a partir de: ../face_profiles/s11FelipeMarin
+7      9  imagenes se cargan a partir de: ../face_profiles/s07ReneDelgado
+8      9  imagenes se cargan a partir de: ../face_profiles/s20DiegPerez
+9      9  imagenes se cargan a partir de: ../face_profiles/s02ClaudioMaldonado
+10      9  imagenes se cargan a partir de: ../face_profiles/s01FelipeSeguel
+11      9  imagenes se cargan a partir de: ../face_profiles/s06PabloRiquelme
+12      9  imagenes se cargan a partir de: ../face_profiles/s14DiegoRamirez
+13      9  imagenes se cargan a partir de: ../face_profiles/s19AlvaroAlarcon
+14      9  imagenes se cargan a partir de: ../face_profiles/s18MaykollPalacios
+15      9  imagenes se cargan a partir de: ../face_profiles/s05MauricioGeneral
+16      9  imagenes se cargan a partir de: ../face_profiles/s16SebastianGodoy
+17      9  imagenes se cargan a partir de: ../face_profiles/s09AlvaroSoto
+
+162  fotografias de  18  personas estan cargadas
+
+ Extraccion de las mejores 30  Eigenfaces de  121 rostros
+
+Proyeccion de los datos de entrada en base a los Eigenfaces ortonormales
+
+Montaje del clasificador para el conjunto de entrenamiento
+
+Prediccion de nombres de las personas en el conjunto de prueba
+
+La prediccion tomo 0.000168311886671 seg por muestra en promedio
+
+Prueba de tasa de error: 17.0732 %
+Tasa Prueba de Reconocimiento : 82.9268 %
