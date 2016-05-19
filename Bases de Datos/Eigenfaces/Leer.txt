@@ -1,0 +1,7 @@
+Uso
+
+Ambas carpetas contiene los conjutos de entrenamiento [gallery] y prueba[probes] para validaciones cruzadas MODO 1 y MODO 2 (Ver codigo ValidacionCruzada.py para comprender los modos)
+
+Abrir VCSeparada luego Copiar ambas [gallery probes] carpetas en dir:  /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces
+
+Abrir VCJunta luego Copiar ambas [gallery probes] carpetas en dir:  /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces

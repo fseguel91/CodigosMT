@@ -1,0 +1,3 @@
+USO
+
+Copiar ambas [gallery probes] carpetas en dir:  /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces

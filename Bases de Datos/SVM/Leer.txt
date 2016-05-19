@@ -1,0 +1,2 @@
+Uso 
+Pegar carpeta face_profiles  en /home/pi/Desktop/CodigosMT/SVM/RealTimeFaceRecognition
