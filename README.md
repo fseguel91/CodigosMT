@@ -129,6 +129,8 @@ La rapidez de esta operación dependerá de la conexión a Internet y del tiempo
 Paso 6: Luego es el momento de configurar \ac{OpenCV}. Se trata de una larga lista, la cual se puede configurar o usar como viene por defecto. Para entrar al menú de configuración escribimos lo siguiente.
 
     pi@raspberrypi /openCV-2.4.9/release $ sudo ccmake ../ 
+    
+![raspy04](https://cloud.githubusercontent.com/assets/12227311/15406361/94660190-1ddc-11e6-8153-97497a5eea51.png)
 
 -Paso 7:Una vez terminada la configuración y guardada se comienza a ejecutar el siguiente comando: 
 
@@ -190,239 +192,168 @@ En \textit{Yale Face} todas las imágenes se bajan en un solo directorio. Lo que
 Con esto copiamos todos los archivos que comienzan con \textit{subject01} en la carpeta \textit{s01}.\\
 Esto se hace con los siguientes sujetos de igual forma. %en donde se puede crear un \textit{bucle} para hacer la tarea de forma más rápida.
 Por otro lado la base de datos \textit{Yale Face} no trae las caras realmente centradas por lo que hay que cortarlas.
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{Figuras/YaleCrop.png}
-	\label{Fig:YaleCrop}
-	\caption{Ejemplo de imagen de base de datos \textit{Yale Face} que necesita ser recortada.}
-\end{figure}
+![yalecrop](https://cloud.githubusercontent.com/assets/12227311/15406307/6114db86-1ddc-11e6-9220-fba52618ee46.png)
+
 Esto se resuelve con los siguientes comandos:
-\begin{lstlisting}[style=bash,label={code:mkdirBaseDatos}]
-pi@raspberrypi /yalefaces$ cd s01
-pi@raspberrypi /yalefaces$ convert 'subject01*' -crop 320x243+100-10 crop_subject%01d.gif
-\end{lstlisting}
+
+	pi@raspberrypi /yalefaces$ cd s01
+	pi@raspberrypi /yalefaces$ convert 'subject01*' -crop 320x243+100-10 crop_subject%01d.gif
+
 
 Esto recorta todas las imágenes dejando la cara más centrada a $230 \times 233$ \textit{pixeles} y las renombra en formato \textit{gif}. Esto se repite para todos los sujetos. Se recomienda crear un pequeño \textit{script} con un bucle para agilizar ambos procesos.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.47]{Figuras/ImplementaEigenface01.png}
-	\hspace{1cm}
-	\includegraphics[scale=0.435]{Figuras/ImplementaEigenface02.png}
-	\label{Fig:ImplementaEigenface01}
-	\caption{Resultados del prepocesamiento a base de datos \textit{Yale Face}.}
-\end{figure}
+![implementaeigenface01](https://cloud.githubusercontent.com/assets/12227311/15406426/e0cd58bc-1ddc-11e6-84db-280769a72630.png)
+![implementaeigenface02](https://cloud.githubusercontent.com/assets/12227311/15406430/e598baf8-1ddc-11e6-83bd-97126c78b3cf.png)
+
  
 El mismo preprocesamiento se hace con una base de datos propia, ordenar por carpetas los sujetos y recortar en caso de que no estén centradas las imágenes para aumentar eficiencia del algoritmo de reconocimiento facial. Posteriormente se debe dividir las imágenes de los sujetos en conjuntos de entrenamiento y de prueba. En este caso se va a usar una relación de imágenes de entrenamiento y prueba de $8:1$. Para lograr esto se sigue lo siguiente:
 
-\begin{itemize}
-	\item Se copian manualmente 8 imágenes de un sujeto en el directorio \textit{pyfaces/gallery} 
-	\item Se selecciona la imagen sobrante del sujeto que se someterá a reconocimiento y se copia en el directorio \textit{pyfaces/probes} 
-\end{itemize}
 
-\begin{figure}[H]
-	\centering
-	\label{Fig:PreprocesamientoEigenFaces01}
-	\subfigure[Carpetas imágenes preprocesadas.]{\includegraphics[scale=0.5]{Figuras/PreprocesamientoEigenFaces01.png}}\\
-	\subfigure[Conjunto de imágenes de prueba \textit{Eigenfaces}.]{\includegraphics[scale=0.48]{Figuras/PreprocesamientoEigenFaces03.png}}
-	\subfigure[Conjunto de imágenes de entrenamiento \textit{Eigenfaces}.]{\includegraphics[scale=0.48]{Figuras/PreprocesamientoEigenFaces02.png}}
-\end{figure}
+	- Se copian manualmente 8 imágenes de un sujeto en el directorio \textit{pyfaces/gallery} 
+	-Se selecciona la imagen sobrante del sujeto que se someterá a reconocimiento y se copia en el directorio \textit{pyfaces/probes} 
 
-Se eligió la relación conjunto de entrenamiento a prueba de forma arbitraria pudiendo escoger cualquier otra relación y observar sus resultados.\\
+
+![preprocesamientoeigenfaces01](https://cloud.githubusercontent.com/assets/12227311/15406458/0b69928e-1ddd-11e6-9d81-341e9754ab0e.png)
+![preprocesamientoeigenfaces03](https://cloud.githubusercontent.com/assets/12227311/15406465/14b35122-1ddd-11e6-88db-00d8e961f069.png)
+![preprocesamientoeigenfaces02](https://cloud.githubusercontent.com/assets/12227311/15406460/0f953c3c-1ddd-11e6-8e98-f3d791aebeb1.png)
+Se eligió la relación conjunto de entrenamiento a prueba de forma arbitraria pudiendo escoger cualquier otra relación y observar sus resultados.
 Se puede ver que las imágenes de prueba corresponden a todas las expresiones normales de los sujetos y estas no se encuentran en la carpeta de imágenes de entrenamiento que contiene las restantes expresiones.\\
 De esta manera ya se puede ejecutar el código %el cual ya trae un manual con un archivo en el directorio \textit{/EigenFaces/pyfaces/pyfacescmd} el cual se llama \textit{usage.txt}, lo cual %
 de la siguiente manera. 
 
-\begin{lstlisting}[style=bash,label={code:RunEigenFaces}]
-pi@raspberrypi .../pyfaces/pyfacescmd $ python pyfacesdemo ImagenPrueba  BasedeDatos NumerodeEigenFaces Threshold
- \end{lstlisting}
- %python pyfacesdemo /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces/probes/s01Normal7.gif /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces/gallery/ 15 3
+
+	pi@raspberrypi .../pyfaces/pyfacescmd $ python pyfacesdemo ImagenPrueba  BasedeDatos NumerodeEigenFaces Threshold
+
+ 	python pyfacesdemo /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces/probes/s01Normal7.gif /home/pi/Desktop/CodigosMT/EigenFaces/pyfaces/pyfaces/gallery/ 15 3
 
 Donde los parámetros que se pasan a programa en \textit{Python} representan:
 
-\begin{description}
-	\item[ImagenPrueba]: Directorio donde se encuentra la imagen de prueba (Ejemplo: \textit{/home/pi/.../pyfaces/probes/s01Normal7.gif})
-	\item[BasedeDatos]: Directorio donde se encuentra la galería completa de la base de datos (Ejemplo: \textit{/home/pi/.../pyfaces/gallery/})
-	\item[NumerodeEigenFaces]:Número de \textit{Eigenfaces} que se necesitan.
-	\item[Threshold]: Umbral máximo admisible de distancia Euclidiana. Si se sobrepasa sujeto no se encuentra en base de datos.
-\end{description}
+
+	-ImagenPrueba: Directorio donde se encuentra la imagen de prueba (Ejemplo: \textit{/home/pi/.../pyfaces/probes/s01Normal7.gif})
+	-BasedeDatos: Directorio donde se encuentra la galería completa de la base de datos (Ejemplo: \textit{/home/pi/.../pyfaces/gallery/})
+	-NumerodeEigenFaces:Número de \textit{Eigenfaces} que se necesitan.
+	-Threshold: Umbral máximo admisible de distancia Euclidiana. Si se sobrepasa sujeto no se encuentra en base de datos.
+
 
 Como acotación necesariamente las imágenes de prueba y de entrenamiento tienen que tener el mismo formato y en promedio exigimos a la Raspberry Pi al $25\%$ de su capacidad de procesamiento. \\
 El resultado del procesamiento entrega lo siguiente:
-\begin{lstlisting}[style=bash,label={code:ResultadoEigen}]
-pi@raspberrypi /Desktop/ ... /pyfaces/pyfacescmd $ python pyfacesdemo/ ../pyfaces/probes/s01Normal7.gif ../pyfaces/gallery/ 15\ 2
-Imagen de Prueba: ../pyfaces/probes/s01Normal7.gif  para imagenes extension gif en Base de Datos: ../pyfaces/gallery/
-numero de eigenfaces utilizadas: 15
-no hay archivo cache(algoritmo no entrenado)
-probando reconstruccion
-Elaborando directorio: ../reconfaces
-matches :../pyfaces/gallery/s01Feliz1.gif dist :0.123344144392
-tiempo ejecucion : 284.600765944 secs
-\end{lstlisting}
 
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[scale=0.7]{Figuras/ResultadosEigenfaces.png}
-%	\label{Fig:ResultadosEigenfaces}
-%\end{figure}
+	pi@raspberrypi /Desktop/ ... /pyfaces/pyfacescmd $ python pyfacesdemo/ ../pyfaces/probes/s01Normal7.gif ../pyfaces/gallery/ 15\ 2
+	Imagen de Prueba: ../pyfaces/probes/s01Normal7.gif  para imagenes extension gif en Base de Datos: ../pyfaces/gallery/
+	numero de eigenfaces utilizadas: 15
+	no hay archivo cache(algoritmo no entrenado)
+	probando reconstruccion
+	Elaborando directorio: ../reconfaces
+	matches :../pyfaces/gallery/s01Feliz1.gif dist :0.123344144392
+	tiempo ejecucion : 284.600765944 secs
+
+
+![resultadoseigenfaces](https://cloud.githubusercontent.com/assets/12227311/15406535/5a6e49e2-1ddd-11e6-8acd-701233d2316a.png)
 
 En el ejemplo entrega como resultado de reconocimiento la imagen \textit{s01Feliz1.gif} para la imagen de prueba \textit{s01Normal7.gif} que no se encuentra en la base de datos y resulta ser correcto. Es que mencionar que el tiempo de ejecución aproximadamente de $4.7$ min. Si bien es alto y se aleja de una aplicación en tiempo real este baja considerablemente una vez que el algoritmo ya se entrena aproximadamente a $65$ seg.. \\
 Por otra parte, en forma de resultados esta implementación crea dos carpetas que contienen todas las \textit{Eigenfaces} calculadas y otra carpeta con caras reconstruidas, en donde la implementación trata de reconstruir las caras dado el número de \textit{Eigenfaces} que se da como parámetro. Además entrega la cara promedio que para el ejemplo es la siguiente:\\
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{Figuras/CaraPromedioEigenFaces.png}
-	\label{Fig:CaraPromedioEigenFaces}
-	\caption{Cálculo de la cara promedio.}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\subfigure[Algunas \textit{Eigenfaces} calculadas.]{\includegraphics[scale=0.55]{Figuras/ResultadosEigenfaces01.png}}
-	\subfigure[Caras reconstruidas.]{\includegraphics[scale=0.55]{Figuras/ResultadosEigenfaces02.png}}
-	\label{Fig:ResultadosEigenfaces02}
-\end{figure}
+![carapromedioeigenfaces](https://cloud.githubusercontent.com/assets/12227311/15406551/653130d8-1ddd-11e6-91d2-6c1b3f28b43f.png)
+
+
+![resultadoseigenfaces01](https://cloud.githubusercontent.com/assets/12227311/15406566/71d10e62-1ddd-11e6-80fe-b2d81a1e3943.png)
+![resultadoseigenfaces02](https://cloud.githubusercontent.com/assets/12227311/15406573/75b8cbdc-1ddd-11e6-8107-0a7d60fd271d.png)
 Otra forma de usar esta implementación del algoritmo \textit{Eigenfaces} es mediante interfaz gráfica que funciona de igual manera. Es que tener la precaución de volver a entrenar el algoritmo, para ello se eliminan las carpetas $eigenfaces$ y $reconfaces$ y el $saveddate.cache$ que se crea en la carpeta $gallery$ que corresponde a la base de datos.
 Además necesita el paquete \textit{Tix} el cual se instala con:
-\begin{lstlisting}[style=bash,label={code:Tix}]
-pi@raspberrypi $ sudo apt-get install tix-dev
-\end{lstlisting}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{Figuras/InterfazEigenfaces.png}
-	\label{Fig:InterfazEigenfaces}
-	\caption{Interfaz gráfica para reconocimiento de rostros usando \textit{Eigenfaces}}
-\end{figure}
+	pi@raspberrypi $ sudo apt-get install tix-dev
 
-La guía completa de esta implementación la cual sirvió para comentar en detalle esta implementación corresponde a Sajan \cite{ImplementacionAlgoritmoEigenfaces} con su artículo \textit{Face Recognition in Python}.
 
-\newpage
-\subsection[]{Implementación método de clasificación ocupando distancia Euclidiana}
+![interfazeigenfaces](https://cloud.githubusercontent.com/assets/12227311/15406595/849e87fe-1ddd-11e6-9e3b-5c0f882b7e57.png)
+
+
+La guía completa de esta implementación la cual sirvió para comentar en detalle esta implementación corresponde a Sajan con su artículo \textit{Face Recognition in Python}.
+
+
+##Implementación método de clasificación ocupando distancia Euclidiana
 
 La implementación de este método de clasificación se llevo a cabo ocupando \textit{SciPy} que es una biblioteca de código abierto el cual contiene algoritmos y herramientas para \textit{Python} que permite hacer el procesamiento de imágenes. Esta librería se encuentra orientada al mismo tipo de usuarios de aplicaciones como \textit{Matlab}. 
 
-\begin{figure}[H]
-	\centering 
-	\subfigure[NumPy, Biblioteca SciPy y Matplotlib]{\includegraphics[scale=0.5]{Figuras/NumPy.png}}
-	\label{Fig:LibreriasParaDistEuclidiana}
-\end{figure}
-
+![numpy](https://cloud.githubusercontent.com/assets/12227311/15406617/9811fd20-1ddd-11e6-972b-012801350603.png)
 
 La implementación lo que hace es comparar el parecido entre dos caras. Para eso calcula la distancia Euclidiana entre la imagen que se quiere reconocer y un conjunto de imágenes de entrenamiento que se obtienen de la implementación de \textit{Eigenface} y es el cálculo de la cara promedio de cada sujeto. Luego busca un mínimo entre todas esas distancias de las cuales cálculo, desplegando la imagen que reconoció con su correspondiente distancia Euclianana y la normalización del número de pixeles.
 
 
-\begin{figure}[H]
-	\centering
-	\subfigure[Imagen a reconocer por el método]{\includegraphics[scale=0.42 ]{Figuras/DEImagenAReconocer.png}}\hspace{1.5cm}
-	\subfigure[Imagen reconocida por el método de clasificación distancia Euclidiana ]{\includegraphics[scale=0.42]{Figuras/DEReconocida.png}}
-	\label{fig:Figuras2y3DE}
-\end{figure}
+![deimagenareconocer](https://cloud.githubusercontent.com/assets/12227311/15406633/a6431c30-1ddd-11e6-9e5b-ec7924b55d92.png)
+![dereconocida](https://cloud.githubusercontent.com/assets/12227311/15406640/ac9534c4-1ddd-11e6-996f-d1d840b471ec.png)
 	
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{Figuras/DEConjuntoEntrenamiento.png}
-	\label{Fig: ConjuntoEntrenamiento}
-	\caption{Conjunto de Entrenamiento para método Distancia Euclidiana}
-\end{figure}
+![deconjuntoentrenamiento](https://cloud.githubusercontent.com/assets/12227311/15406652/ba97043a-1ddd-11e6-904b-0a43ab94f580.png)
 
 La implementación parece bastante básica, y no se ejecuta en tiempo real como se había pensado en un principio pero busca demostrar que este método de clasificación es el peor y da los peores resultados de reconocimiento.
 \newpage
-\subsection[]{Implementación método de clasificación \acf{SVM}}
+##Implementación método de clasificación SVM
 
 La implementación de este algoritmo es capaz de detectar rostros mediante clasificadores en cascada basados en la función de \textit{Haar} propuestos por el método de detección de objetos de Paul Viola \& Michael Jones \cite{OpenCVHaarCascade}. La implementación utilizada fue creada por Chenxing Ouyang \cite{SVMHaarCascade} la cual posee una  mejora al método de Viola \& Jones que permite la detección hasta en $45^{\circ}$ grados de inclinación de la cabeza. Por lo tanto la implementación es un sistema práctico para el seguimiento y reconocimientos de rostros en tiempo real. \\
 
 El diseño del sistema consta específicamente de los siguientes pasos:
-\begin{itemize}
-	\item \textbf{Pre-procesado de la imagen:} Esto implica cambiar el tamaño y rotar cada cuadro del flujo de vídeo.
-	\item \textbf{Detección de rostro:} Usando la función \textit{Haar} como clasificador en cascada.
-	\item \textbf{Preparación de base de datos:} Esto implica recortar la imagen, cambiar el tamaño y ponerla en escala de grises.
-	\item \textbf{Se calculan las \emph{Eigenfaces}:} Se extraen características y se seleccionan las mejores.
-	\item \textbf{Clasificación:} Se ocupa el método de clasificación de \ac{SVM} con un \textit{kernel} \ac{RBF}, tangente hiperbólica (sigmoid), lineal (linear) y polinomial (poly).
-	\item \textbf{Resultados de clasificación:} Se exponen en tiempo real.
-\end{itemize}
+
+	- \textbf{Pre-procesado de la imagen:} Esto implica cambiar el tamaño y rotar cada cuadro del flujo de vídeo.
+	- \textbf{Detección de rostro:} Usando la función \textit{Haar} como clasificador en cascada.
+	- \textbf{Preparación de base de datos:} Esto implica recortar la imagen, cambiar el tamaño y ponerla en escala de grises.
+	- \textbf{Se calculan las \emph{Eigenfaces}:} Se extraen características y se seleccionan las mejores.
+	- \textbf{Clasificación:} Se ocupa el método de clasificación de \ac{SVM} con un \textit{kernel} \ac{RBF}, tangente hiperbólica (sigmoid), lineal (linear) y polinomial (poly).
+	- \textbf{Resultados de clasificación:} Se exponen en tiempo real.
+
 La detección y reconocimiento de la cara fueron implementados en \textit{Python}. En una primera etapa esta implementación detecta si existe frente a la cámara algún rostro utilizando clasificadores entrenados que vienen en \ac{OpenCV}. Este tipo de clasificadores se basan en características \textit{Haar} que evalúan apariencia, es decir una combinación de características tales como color de la piel y la forma de la cabeza. Para lograr esto se comparan y calculan los \textit{frames} obtenidos del flujo de imágenes de la Pi-cam. Una ventaja de usar este método usando \ac{SVM} es su aprendizaje automático debido al entrenamiento de una cantidad de imágenes positivas y negativas. Una vez entrenado el sistema de detección de caras se procesa rápido y eficazmente \cite{SVMHaarCascade}.\\
  %Para poner en ejecución este método en tiempo real, el algoritmo de detección se ejecuta en cada frame del proceso. \\
 En \ac{OpenCV}, las características \textit{Haar} vienen escritas con parámetros de optimización, tales como distancias mínimas entre caras para la detección de caras múltiples y los tamaños mínimo de cara a ser detectados, entre otros \cite{SVMHaarCascade}. %A lo largo de el estudio ya sea de detección y reconocimiento se aprecia un denominador común que es que la cabeza ocupa un pequeño espacio dentro de una imagen.% lo que hace genera una manera extraña de mirar a las personas en la vida real.\\ 
 Las características \textit{Haar} finalmente en código no son más que largos archivos XML de aproximadamente 30 mil líneas de código.
 
+![classifisvmimp](https://cloud.githubusercontent.com/assets/12227311/15406683/dd9c262c-1ddd-11e6-964f-c8353c6fff59.png)
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{Figuras/ClassifiSVMImp.png}
-	\caption{Ejemplos de características \textit{Haar} en código XML}
-	\label{Fig:ClassifiSVMImp}
-\end{figure}
 
 Este tipo de archivos con nombre como \textit{``haarcascade\_frontalface\_alt\_tree.xml"} o nombres similares son los clasificadores que se pueden elegir y son de código abierto. Están muy afinados para los perfiles que se necesitan detectar y lo que contienen son umbrales que se puede ver a continuación:% donde hay una cantidad de umbrales.
  
-\begin{lstlisting}[style=xml,caption={Pequeña parte de código XML de haarcascada frontalface.},label={code:haarcascade_frantalface}]
-<maxWeakCount>9</maxWeakCount>
-<stageThreshold>-1.6378560066223145e+00</stageThreshold>
-<weakClassifiers>
-<_>
-<internalNodes>
-0 -1 3 8.7510552257299423e-03</internalNodes>
-<leafValues>
--8.5947072505950928e-01 3.6881381273269653e-01</leafValues></_>
-\end{lstlisting}
+	<maxWeakCount>9</maxWeakCount>
+	<stageThreshold>-1.6378560066223145e+00</stageThreshold>
+	<weakClassifiers>
+	<_>
+	<internalNodes>
+	0 -1 3 8.7510552257299423e-03</internalNodes>
+	<leafValues>
+	-8.5947072505950928e-01 3.6881381273269653e-01</leafValues></_>
+	
 
 Por otro lado una mejora de procesamiento hecha por Ouyang,  fue cambiar el tamaño de la imagen a procesar a una cuarta parte y pasarla a escala de grises antes de ser procesadas por el sistema de detección de rostros \cite{SVMHaarCascade}. Una vez que se encuentre una cara esta se recorta y se introducen al sistema de reconocimiento facial.
-\begin{figure}[H]
-	\centering
-	\subfigure{\includegraphics[scale=0.97]{Figuras/ResultadoImplSVM1.png}}
-	\subfigure{\includegraphics[scale=0.64]{Figuras/ResultadoImplSVM2.png}}
-	\caption{Cara recortada después de ser detectada por el sistema.}
-	\label{Fig:CaradelsistemaSVM}
-\end{figure}
+![resultadoimplsvm1](https://cloud.githubusercontent.com/assets/12227311/15406710/f335cba0-1ddd-11e6-93c1-a20e4c4c142e.png)
+![resultadoimplsvm2](https://cloud.githubusercontent.com/assets/12227311/15406715/f85b85de-1ddd-11e6-9e7b-52f338a86b6b.png)
+
 
 Tal como se menciona una limitación del algoritmo original propuesto por Viola \& Jones es detectar caras giradas, lo cual se soluciona con la implementación de su propio algoritmo de detección de rostros girados elaborada por el autor, lo cual se basa en la suposición de que la gente normalmente inclina más o menos $45^{\circ}$ grados ya sea para la izquierda o derecha la cabeza. La implementación se basa en un mapeo realizado con librerías de \textit{Python} apoyándose en el hecho de que los clasificadores en cascada pueden hacer hasta $15^{\circ}$ de giro ya sea a izquierda o derecha. Entonces se examina en tiempo real cada \textit{frame} tres rotaciones (izquierda, medio, derecha) a través de una trasformación geométrica permitiendo la detección del rostro usando la función de \ac{OpenCV} para \textit{Python} \textit{getRotationMatrix2D} \cite{OpenCvTransforGeometrica} que recibe los parámetros:%(w/2, h/2), rotation, scale)
 
-\begin{itemize}
-	\item \textbf{center:} Es el centro de la imagen a la que se quiere hacer la rotación.
-	\item \textbf{angle:} Es el ángulo de rotación en grados. Los valores positivos significan rotación en sentido antihorario.
-	\item \textbf{scale:} Factor de escala isotrópica de la imagen girada.
-	\item \textbf{mapMatrix:} La transformación afín de salida, la matriz de punto flotante 2x3.
-\end{itemize}
 
-La función calcula la matriz:
-	\[ \left( \begin{array}{ccc}
-	\alpha & \beta & (1-\alpha)\cdot \text{center}_{.}x-\beta\cdot \text{center}_{.}y \\
-	-\beta & \alpha & \beta\cdot \text{center}_{.}x+(1-\alpha)\cdot \text{center}_{.}y \end{array} \right)\] 
-donde 
-\begin{equation*}
-	\alpha = \text{scale}\cdot cos \hspace{0.1cm} \text{angle}\\
-\end{equation*}
-\begin{equation*}
-\beta = \text{scale}\cdot sin \hspace{0.1cm}\text{angle}
-\end{equation*}
+	- \textbf{center:} Es el centro de la imagen a la que se quiere hacer la rotación.
+	- \textbf{angle:} Es el ángulo de rotación en grados. Los valores positivos significan rotación en sentido antihorario.
+	- \textbf{scale:} Factor de escala isotrópica de la imagen girada.
+	- \textbf{mapMatrix:} La transformación afín de salida, la matriz de punto flotante 2x3.
+
+
 
 Se recomienda al lector ver el código utils.py la función \textit{rotate\_image} que se encuentra disponible en el repositorio de la implementación en \textit{GitHub} \cite{GitHubSeguel} para ahondar más sobre la implementación realizada. Esto logra una detección de hasta $45^{\circ}$ grados de inclinación de la cabeza, como se muestra en la figura \ref{Fig:RotacionCentro} a continuación:
-\begin{figure}[H]
-	\centering
-	\subfigure[Inclinación izquierda $45^{\circ}$ grados.]{\includegraphics[scale=0.8]{Figuras/RotacionIzq02.png}}
-	\subfigure[Inclinación de 0 grados]{\includegraphics[scale=0.8]{Figuras/RotacionCentro02.png}}
-	\subfigure[Inclinación derecha $45^{\circ}$ grados]{\includegraphics[scale=0.8]{Figuras/RotacionDer02.png}}
-	\caption{Rotación de la cara para sistema de detección de rostro.}
-	\label{Fig:RotacionCentro}
-\end{figure}
+
+![rotacionizq02](https://cloud.githubusercontent.com/assets/12227311/15406742/16153dae-1dde-11e6-843f-3bfcdbc5cd31.png)
+![rotacioncentro02](https://cloud.githubusercontent.com/assets/12227311/15406745/19b1ab50-1dde-11e6-936e-26403481c60f.png)
+![rotacionder02](https://cloud.githubusercontent.com/assets/12227311/15406749/1e85d534-1dde-11e6-84b6-4e3630f0e298.png)
 
 Para lograr estos resultados primero se necesito:
-\begin{description}
-\item[Preparación de base de datos:] La base de datos usada fue de creación propia. Las imágenes recortadas son originalmente de $192 \times 172$ pixeles, las cuales se re-dimensionan a $50 \times 50$ pixeles con el fin, de lograr una mayor velocidad de procesamiento durante el entrenamiento y la detección. Además la implementación trae consigo un sistema que permite a los usuarios de forma automática tomar fotografías a usuarios tan solo especificando un directorio para guardar el perfil guardando imágenes de entrenamiento en tiempo real \cite{SVMHaarCascade} usando el programa:
-\begin{lstlisting}[style=bash,label={code:SVMTrain}]
-pi@raspberrypi /Desktop/ ... /scripts $ python train.py [face_profile_name=<Nombre de carpeta perfil del sujeto>]
 
-\end{lstlisting}
+-[Preparación de base de datos:] La base de datos usada fue de creación propia. Las imágenes recortadas son originalmente de $192 \times 172$ pixeles, las cuales se re-dimensionan a $50 \times 50$ pixeles con el fin, de lograr una mayor velocidad de procesamiento durante el entrenamiento y la detección. Además la implementación trae consigo un sistema que permite a los usuarios de forma automática tomar fotografías a usuarios tan solo especificando un directorio para guardar el perfil guardando imágenes de entrenamiento en tiempo real \cite{SVMHaarCascade} usando el programa:
 	
-	
-\item[Extracción de caracteristicas:] Tomando las imágenes de la base de datos se forman dos conjuntos uno de entrenamiento y de prueba en una proporción $3:1$ al azar. Con esto se extraen las caracteristicas más representativas en forma de valores numéricos los cuales se comparan y evalúan posteriormente. En este caso se trabajo con las mejores $6$ variando hasta $54$ \textit{Eigenfaces} en vez  de las $150$ que propuso el autor de la implementación para comparar de forma justa con el algoritmo que ocupa solo \textit{Eigenfaces} y distancia euclidiana para el reconocimiento de rostros.
+	pi@raspberrypi /Desktop/ ... /scripts $ python train.py [face_profile_name=<Nombre de carpeta perfil del sujeto>]
 
-\item[Clasificación] Con la utilización del modelo estadístico de \ac{SVM} se separan conjuntos de datos, con el fin de tener distancias máximas entre datos de diferentes clases. El código fue implementado usando \textit{scikit-learn} en donde \ac{PCA}, específicamente \textit{Eigenfaces} alimenta el modelo de clasificación \cite{SVMHaarCascade}.
-	
-\end{description}
 
+
+-Extracción de caracteristicas:Tomando las imágenes de la base de datos se forman dos conjuntos uno de entrenamiento y de prueba en una proporción $3:1$ al azar. Con esto se extraen las caracteristicas más representativas en forma de valores numéricos los cuales se comparan y evalúan posteriormente. En este caso se trabajo con las mejores $6$ variando hasta $54$ \textit{Eigenfaces} en vez  de las $150$ que propuso el autor de la implementación para comparar de forma justa con el algoritmo que ocupa solo \textit{Eigenfaces} y distancia euclidiana para el reconocimiento de rostros.
+
+-Clasificación Con la utilización del modelo estadístico de \ac{SVM} se separan conjuntos de datos, con el fin de tener distancias máximas entre datos de diferentes clases. El código fue implementado usando \textit{scikit-learn} en donde \ac{PCA}, específicamente \textit{Eigenfaces} alimenta el modelo de clasificación \cite{SVMHaarCascade}.
+	
 
 Finalmente, la aplicación se utiliza en tiempo real, corriendo a 10 \textit{frames} por segundo con una alta precisión en el reconocimiento lo cual es relativo al número de imágenes de entrenamiento y la tan representativas sean esas imágenes en el conjunto de entrenamiento.
 
