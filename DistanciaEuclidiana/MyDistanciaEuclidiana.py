@@ -7,24 +7,24 @@ Run: Para correr el codigo es necesario escribir en consola
 
 python MyDistanciaEuclidiana.py [DirectorioCaraReconocer]
 
-Por ejemplo: python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s01Normal7.gif
-			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s02Normal4.gif
-			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s03Normal4.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s04Normal1.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s05Normal5.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s06Normal5.gif     #-->No Funciona
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s07Normal3.gif	    #-->No Funciona
-  			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s08Normal5.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s09Normal1.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s10Normal1.gif   		
-			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s11Normal4.gif		#-->No Funciona
-			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s12Normal1.gif	
-			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s13Normal4.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s14Normal2.gif		#-->No Funciona	
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s16Normal1.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s18Normal1.gif
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s19Normal8.gif		#-->No Funciona
- 			python MyDistanciaEuclidiana.py /home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/s11Normal1.gif		#-->No Funciona
+Por ejemplo: python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s01Normal7.gif
+			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s02Normal4.gif
+			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s03Normal4.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s04Normal1.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s05Normal5.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s06Normal5.gif     #-->No Funciona
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s07Normal3.gif	    #-->No Funciona
+  			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s08Normal5.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s09Normal1.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s10Normal1.gif   		
+			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s11Normal4.gif		#-->No Funciona
+			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s12Normal1.gif	
+			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s13Normal4.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s14Normal2.gif		#-->No Funciona	
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s16Normal1.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s18Normal1.gif
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s19Normal8.gif		#-->No Funciona
+ 			python MyDistanciaEuclidiana.py /home/pi/Desktop/CodigosMT/DistanciaEuclidiana/s11Normal1.gif		#-->No Funciona
 
 
  Autor: Felipe A. Seguel Mora felipeseguel@udec.cl  GibHub: https://github.com/fseguel91/Reconocimiento-de-Rostros-
@@ -45,25 +45,25 @@ def main():
 
 	NumerodeImagenesBD = 18
 	#Carga Imagenes de Entrenamiento.
-	img1 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageAAlarcon.png','png')
-	img2 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageACarrasco.png','png')
-	img3 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageASoto.png','png')
-	img4 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageCLeal.png','png')
-	img5 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageCmaldonado.png','png')
-	img6 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageDPalacios.png','png')
-	img7 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageDPerez.png','png')
-	img8 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageDRamirez.png','png')
-	img9 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageEtramon.png','png')
-	img10 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageFMarin.png','png')
-	img11 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageFQuiroz.png','png')
-	img12 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageFSeguel.png','png')
-	img13 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageMGeneral.png','png')
-	img14 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averagePRiquelme.png','png')
-	img15 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averagePRodriguez.png','png')
-	img16 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageRDelgado.png','png')
-	img17 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageSGogoy.png','png')
-	img18 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageYIsla.png','png')
-	#img19 = imread('/home/pi/Desktop/FacialRecognitionPython/DistanciaEuclidiana/averageSujetoNuevo.png','png')    # Agregar a un sujeto Nuevo
+	img1 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageAAlarcon.png','png')
+	img2 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageACarrasco.png','png')
+	img3 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageASoto.png','png')
+	img4 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageCLeal.png','png')
+	img5 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageCmaldonado.png','png')
+	img6 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageDPalacios.png','png')
+	img7 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageDPerez.png','png')
+	img8 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageDRamirez.png','png')
+	img9 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageEtramon.png','png')
+	img10 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageFMarin.png','png')
+	img11 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageFQuiroz.png','png')
+	img12 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageFSeguel.png','png')
+	img13 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageMGeneral.png','png')
+	img14 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averagePRiquelme.png','png')
+	img15 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averagePRodriguez.png','png')
+	img16 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageRDelgado.png','png')
+	img17 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageSGogoy.png','png')
+	img18 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageYIsla.png','png')
+	#img19 = imread('/home/pi/Desktop/CodigosMT/DistanciaEuclidiana/averageSujetoNuevo.png','png')    # Agregar a un sujeto Nuevo
 
     #Carga de imagen de prueba
  	imgPrueba = imread(sys.argv[1],'gif')

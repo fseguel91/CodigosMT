@@ -1,4 +1,19 @@
 ###############################Sujeto s01#######################################
+python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 6 2
@@ -27,6 +42,21 @@ python pyfacesdemo/ ../pyfaces/probes/s01Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s01LuzIzquierda4.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s01Sorpresa1.png ../pyfaces/gallery 54 2
 ###############################Sujeto s02#######################################
+python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 6 2
@@ -55,6 +85,21 @@ python pyfacesdemo/ ../pyfaces/probes/s02Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s02LuzIzquierda6.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s02Sorpresa5.png ../pyfaces/gallery 54 2
 ###############################Sujeto s03#######################################
+python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 6 2
@@ -83,6 +128,21 @@ python pyfacesdemo/ ../pyfaces/probes/s03Feliz2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s03LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s03Sorpresa1.png ../pyfaces/gallery 54 2
 ###############################Sujeto s04#######################################
+python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 6 2
@@ -110,7 +170,22 @@ python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s04Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s04LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s04Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto s05#######################################
+# ###############################Sujeto s05#######################################
+python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 6 2
@@ -138,7 +213,22 @@ python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s05Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s05LuzIzquierda5.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s05Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto s06#######################################
+# ###############################Sujeto s06#######################################
+python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 6 2
@@ -166,7 +256,22 @@ python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s06Feliz2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s06LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s06Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s07#######################################
+# ###############################Sujeto s07#######################################
+python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 6 2
@@ -194,7 +299,22 @@ python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s07Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s07LuzIzquierda4.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s07Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s08#######################################
+# ###############################Sujeto s08#######################################
+python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 6 2
@@ -222,7 +342,22 @@ python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s08Feliz2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s08LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s08Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto s09#######################################
+# ###############################Sujeto s09#######################################
+python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 6 2
@@ -250,7 +385,22 @@ python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s09Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s09LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s09Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s010#######################################
+# ###############################Sujeto s010#######################################
+python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 6 2
@@ -278,7 +428,22 @@ python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s10Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s10LuzIzquierda2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s10Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto s11#######################################
+# ###############################Sujeto s11#######################################
+python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 6 2
@@ -306,7 +471,22 @@ python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s11Feliz5.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s11LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s11Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s12#######################################
+# ###############################Sujeto s12#######################################
+python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 6 2
@@ -334,7 +514,22 @@ python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s12Feliz2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s12LuzIzquierda1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s12Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s13#######################################
+# ###############################Sujeto s13#######################################
+python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 6 2
@@ -362,7 +557,22 @@ python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s13Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s13LuzIzquierda2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s13Sorpresa7.png ../pyfaces/gallery 54 2
-##############################Sujeto s14#######################################
+# ##############################Sujeto s14#######################################
+python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 6 2
@@ -390,7 +600,22 @@ python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s14Feliz4.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s14LuzIzquierda2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s14Sorpresa2.png ../pyfaces/gallery 54 2
-###############################Sujeto s16#######################################
+# ###############################Sujeto s16#######################################
+python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 6 2
@@ -418,7 +643,22 @@ python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s16Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s16LuzIzquierda3.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s16Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto s18#######################################
+# ###############################Sujeto s18#######################################
+python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 6 2
@@ -446,7 +686,22 @@ python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s18Feliz1.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s18LuzIzquierda4.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s18Sorpresa1.png ../pyfaces/gallery 54 2
-###############################Sujeto 19#######################################
+# ###############################Sujeto 19#######################################
+python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 6 2
@@ -474,7 +729,22 @@ python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 48 2
 python pyfacesdemo/ ../pyfaces/probes/s19Feliz2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s19LuzIzquierda2.png ../pyfaces/gallery 54 2
 python pyfacesdemo/ ../pyfaces/probes/s19Sorpresa4.png ../pyfaces/gallery 54 2
-###############################Sujeto s20#######################################
+# ###############################Sujeto s20#######################################
+python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 1 2
+python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 2 2
+python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 3 2
+python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 4 2
+python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 5 2
+python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 5 2
 python pyfacesdemo/ ../pyfaces/probes/s20Feliz3.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s20LuzIzquierda3.png ../pyfaces/gallery 6 2
 python pyfacesdemo/ ../pyfaces/probes/s20Sorpresa5.png ../pyfaces/gallery 6 2

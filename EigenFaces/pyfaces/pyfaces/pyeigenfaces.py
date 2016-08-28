@@ -4,12 +4,8 @@ from numpy import average,sort,trace
 from numpy.linalg import svd,eigh
 from math import sqrt
 import pickle
-import utils as ut
 from shutil import rmtree
 from os import mkdir
-with warnings.catch_warnings():
-    warnings.simplefilter("ignore")
-    from sklearn.cross_validation import train_test_split
 
 
 from os.path import isdir,join,normpath

@@ -1,0 +1,3 @@
+Uso
+
+copiar imagenes a dir: /home/pi/Desktop/CodigosMT/DistanciaEuclidiana

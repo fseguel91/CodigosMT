@@ -270,7 +270,7 @@ def build_SVC(face_profile_data, face_profile_name_index, face_dim):
     #print "y_test=",y_test
     # Compute a PCA (eigenfaces) on the face dataset (treated as unlabeled
     # dataset): unsupervised feature extraction / dimensionality reduction
-    n_components = 24  # maximum number of components to keep
+    n_components = 121  # maximum number of components to keep
 
     print("\n Extraccion de las mejores %d  Eigenfaces de  %d rostros" % (n_components, X_train.shape[0]))
     #print("\nExtracting the top %d eigenfaces from %d faces" % (n_components, X_train.shape[0]))
@@ -298,7 +298,7 @@ def build_SVC(face_profile_data, face_profile_name_index, face_dim):
 
     # Best Estimator found using Radial Basis Function Kernal: rbf sigmoid poly linear
     clf = SVC(C=1000.0, cache_size=200, class_weight='balanced', coef0=0.0,
-  decision_function_shape=None, degree=4, gamma=0.0001, kernel='linear',
+  decision_function_shape=None, degree=4, gamma=0.0001, kernel='rbf',
   max_iter=-1, probability=False, random_state=None, shrinking=True,
   tol=0.001, verbose=False)
     # Train_pca with Alex Test Error Rate:  0.088424437299
